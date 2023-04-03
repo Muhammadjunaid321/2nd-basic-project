@@ -1,0 +1,227 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Montserrat:wght@100;200;300&family=Roboto:wght@100&family=Source+Code+Pro:wght@200&display=swap'); */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* text-decoration: none; */
+  list-style-type: none;
+}
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  /* margin: 10px 0; */
+}
+h1 {
+  font-size: 36px;
+}
+h5 {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+header h1 {
+  font-weight: 400;
+  font-size: 64px;
+  width: 100%;
+  margin-top: 16px;
+}
+header {
+  background-color: #f44336;
+  color: #fff;
+}
+header .front {
+  /* font-weight: 400; */
+  padding: 128px 16px 125px 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  font-size: 24px;
+}
+.front p {
+  font-family: "Lato", sans-serif;
+  /* width: 100%; */
+  margin: 14px 0;
+  font-weight: 300;
+}
+button {
+  padding: 12px 24px;
+  margin-top: 26px;
+  margin-bottom: 3px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  outline: none;
+}
+button:hover {
+  background-color: #cecbcb;
+  color: black;
+}
+nav {
+  height: 51px;
+  width: 100%;
+  background-color: #f44336;
+  color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: fixed;
+}
+nav li {
+  font-family: "Montserrat", sans-serif;
+  width: auto;
+  font-size: 18px;
+  padding: 12px 24px;
+  font-weight: 500;
+  cursor: pointer;
+  /* display: flex; */
+}
+nav li.active,
+nav li:hover {
+  background-color: #fff;
+  color: black;
+}
+nav li.active:hover {
+  background-color: #cecbcb;
+}
+nav ul {
+  display: flex;
+  /* flex-direction: row; */
+}
+.fa-bars {
+  display: none;
+}
+.first-section {
+  font-size: 15px;
+  max-width: 1010px;
+  padding: 64px 0;
+  display: flex;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
+  margin: 0 auto;
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* max-width: 980px; */
+}
+.content {
+  padding-left: 16px;
+  /* padding-right: 16px; */
+  max-width: 68%;
+  /* min-width: 600px; */
+  /* margin-right: 50px; */
+}
+.content h5 {
+  padding: 32px 0;
+}
+.content p {
+  padding-top: 5px;
+  color: gray;
+}
+.first-icon {
+  margin: 0 auto;
+  /* padding-right: 3px; */
+  /* margin-right: 3px; */
+}
+.fa-anchor,
+.fa-coffee {
+  font-size: 200px;
+}
+.second-section {
+  background-color: #f3f3f3;
+}
+.third-section {
+  color: #fff;
+  background-color: black;
+  opacity: 0.6;
+  text-align: center;
+  padding: 64px 0;
+}
+.third-section h1 {
+  font-size: 24px;
+  margin: 16px;
+}
+.forth-section {
+  text-align: center;
+  color: black;
+  opacity: 0.6;
+}
+.forth-section p {
+  font-size: 15px;
+}
+.forth-section i {
+  margin-top: 64px;
+}
+.forth-section p {
+  padding: 45px;
+}
+@media (max-width: 600px) {
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .fa-bars {
+    display: inline-block;
+    width: auto;
+    height: 51px;
+    font-size: 18px;
+    padding: 16px 24px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  /* .show-on-click {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .after-select {
+    width: 100vw;
+    color: black;
+    background-color: #fff;
+  } */
+  .navbar > *:not(:first-child):not(:last-child) {
+    background-color: #fff;
+    color: black;
+    /* width: fit-content; */
+  }
+  .navbar > *:first-child {
+    /* display: inline-block; */
+    width: fit-content;
+  }
+  /* .navbar.white {
+    background-color: #fff;
+    color: black;
+  } */
+  /* .active {
+    width: fit-content;
+  } */
+  .fa-bars:hover {
+    background-color: #fff;
+    color: black;
+  }
+  .hide-nav > *:not(:first-child):not(:last-child) {
+    display: none;
+  }
+  .content {
+    max-width: 100%;
+    padding-right: 16px;
+  }
+  .first-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
